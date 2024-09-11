@@ -1,0 +1,5 @@
+steps:
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["build", "-t", "gcr.io/$streamlit-435306/streamlit-app", "."]
+images:
+  - "gcr.io/$PROJECT_ID/streamlit-app"
